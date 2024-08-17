@@ -3,7 +3,7 @@
 
 # MiniSync
 
-This is a simple personal app I wrote for my home network. It made use of some concepts I haden't explored before such as managing Windows services, and an application GUI writting in [Wails](https://wails.io/), so I'm only making thie repository public in case people want to see how I integrated these concepts. **For more information, you can read my writeup on Medium [here](https://medium.com/@matt.wiater/implementing-an-automated-file-backup-system-with-go-and-a-minio-cluster-a-pragmatic-approach-0ef4f047e9dc?source=friends_link&sk=1160c8309a3bc7d057216fb5e5796c9d)**. In other words, this is not meant to be anything other than some implementation examples.
+This is a simple personal app I wrote for my home network. It made use of some concepts I haden't explored before such as managing Windows services, and an application GUI writting in [Wails](https://wails.io/), so I'm only making thie repository public in case people want to see how I integrated these concepts. **For more information, you can read my writeup on Medium [here](https://levelup.gitconnected.com/implementing-an-automated-file-backup-system-with-go-and-a-minio-cluster-a-pragmatic-approach-0ef4f047e9dc)**. In other words, this is not meant to be anything other than some implementation examples.
 
 ## Application Summary
 
