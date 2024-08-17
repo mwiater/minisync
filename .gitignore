@@ -1,0 +1,18 @@
+.env
+
+# Wails directories
+build/bin
+frontend/wailsjs
+
+# Wails junk files
+.syso
+
+# Go files
+go.sum
+
+# IDEs
+.idea
+.vscode
+
+# System enviroment variables
+env

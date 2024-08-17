@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniSync</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap-5.3.3.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/duotone.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/sharp-duotone-solid.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Service Status Section -->
+    <div id="status" class="container">
+        <h1><span id="logo">MiniSync</span> <span id="subtitle">Configuration</span></h1>
+        <p class="status-text">The MiniSync Services is installed, and the current status is: <span id="currentServiceStatus"></span>.
+            Control it or uninstall it using the buttons below.
+        </p>
+        <div id="statusControl"></div>
+    </div>
+
+    <!-- Setup Configuration Section -->
+    <div id="setup" class="container">
+        <h1><span id="logo">MiniSync</span> <span id="subtitle">Configuration</span></h1>
+        <form id="backupForm">
+
+            <div class="input-group mb-3">
+                <span class="input-group-text config-label">MiniSync Folder</span>
+                <input id="backupFolder" type="text" class="form-control"
+                    placeholder="Browse local fs for the folder you want to sync" aria-label="MiniSync Folder"
+                    required>
+                <button class="btn btn-secondary config-btn" type="button" id="browseBackupFolder">Browse</button>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text config-label">MiniSync Log Folder</span>
+                <input id="logFolder" type="text" class="form-control"
+                    placeholder="Browse local fs for where you want to store your log file" aria-label="MiniSync Log Folder"
+                    required>
+                <button class="btn btn-secondary config-btn" type="button" id="browseLogFolder">Browse</button>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text config-label">MinIO Endpoint</span>
+                <input type="text" class="form-control" id="minioEndpoint" name="minioEndpoint"
+                    placeholder="192.168.0.10:9000" pattern="^[^:/?#]+(?::[0-9]+)?$" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text config-label">MinIO Bucket</span>
+                <input type="text" class="form-control" id="minioBucketName" name="minioBucketName"
+                    placeholder="minisync" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text config-label">MinIO Key</span>
+                <input type="text" class="form-control" id="minioKey" name="minioKey" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text config-label">MinIO Secret</span>
+                <input type="text" class="form-control" id="minioSecret" name="minioSecret" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text config-label">Backup Frequency</span>
+                <input type="text" class="form-control" id="backupFrequencySeconds" name="backupFrequencySeconds"
+                    placeholder="30" required>
+                <span class="input-group-text config-btn">Seconds</span>
+            </div>
+
+            <button type="submit" class="btn btn-secondary config-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap-5.3.3.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

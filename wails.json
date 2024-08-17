@@ -1,0 +1,10 @@
+{
+  "name": "MiniSync",
+  "outputfilename": "MiniSync",
+  "frontend:install": "",
+  "frontend:build": "",
+  "author": {
+    "name": "Matt J. Wiater",
+    "email": "matt.wiater@gmail.com"
+  }
+}
