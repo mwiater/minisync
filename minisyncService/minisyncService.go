@@ -100,14 +100,6 @@ func minisyncService(elog *eventlog.Log) {
 	MINISYNC_MINIO_ACCESS_KEY, _ := fetchEnvironmentVariable("MINISYNC_MINIO_ACCESS_KEY")
 	MINISYNC_MINIO_SECRET_KEY, _ := fetchEnvironmentVariable("MINISYNC_MINIO_SECRET_KEY")
 
-	elog.Info(1, MINISYNC_BACKUPFOLDER)
-	elog.Info(1, MINISYNC_LOGFOLDER)
-	elog.Info(1, MINISYNC_MINIO_ENDPOINT)
-	elog.Info(1, MINISYNC_MINIO_BUCKETNAME)
-	elog.Info(1, MINISYNC_MINIO_BACKUPFREQUENCYSECONDS)
-	elog.Info(1, MINISYNC_MINIO_ACCESS_KEY)
-	elog.Info(1, MINISYNC_MINIO_SECRET_KEY)
-
 	elog.Info(1, "Set: logFile")
 
 	logFile, err := os.OpenFile(MINISYNC_LOGFOLDER+"\\MiniSync.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
