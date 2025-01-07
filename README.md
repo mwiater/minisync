@@ -5,6 +5,8 @@
 
 This is a simple personal app I wrote for my home network. It made use of some concepts I haden't explored before such as managing Windows services, and an application GUI writting in [Wails](https://wails.io/), so I'm only making thie repository public in case people want to see how I integrated these concepts. **For more information, you can read my writeup on Medium [here](https://levelup.gitconnected.com/implementing-an-automated-file-backup-system-with-go-and-a-minio-cluster-a-pragmatic-approach-0ef4f047e9dc)**. In other words, this is not meant to be anything other than some implementation examples.
 
+**Thanks for the mention [min.io](https://www.linkedin.com/pulse/nfs-must-die-case-studies-what-open-source-ai-really-means-ygomc/?trackingId=P%2FPJiec7RZiHN7r5ZdRhsw%3D%3D)!**
+
 ## Application Summary
 
 MiniSync is a desktop application designed to manage and synchronize files between a local Windows system and a MinIO server. The application provides a user-friendly graphical interface (GUI) using the Wails framework, allowing users to configure synchronization settings, manage the service, and monitor its status in real-time. The underlying service, running as a Windows service, ensures that files in specified directories are automatically backed up to a MinIO server.
